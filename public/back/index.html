@@ -23,8 +23,8 @@
       <ul>
         <li><a class="current" href="#"><i class="glyphicon glyphicon-user"></i> <span>用户管理</span></a></li>
         <li>
-          <a href="#"><i class="glyphicon glyphicon-list"></i> <span>分类管理</span></a>
-          <div class="category" style="display: block">
+          <a href="#" class="category"><i class="glyphicon glyphicon-list"></i> <span>分类管理</span></a>
+          <div class="child" style="display: block">
             <a href="#">一级分类</a>
             <a href="#">二级分类</a>
           </div>
@@ -47,6 +47,24 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="logout_model">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">温馨提示</h4>
+          </div>
+          <div class="modal-body">
+            <p class="red"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="logout_btn">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
   <script src="./lib/jquery/jquery.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.js"></script>

@@ -29,6 +29,10 @@ a:active {
   text-decoration: none;
 }
 
+.red {
+  color: #A94442;
+}
+
 .lt_aside {
   position: fixed;
   left: 0;
@@ -37,6 +41,10 @@ a:active {
   width: 180px;
   background-color: #222D32;
   z-index: 999;
+  transition: all 1s;  
+}
+.lt_aside.hide_menu {
+  left: -180px;
 }
 
 .lt_aside .lt_brand {
@@ -83,7 +91,7 @@ a:active {
   border-left: 3px solid #006699;
 }
 
-.lt_aside .lt_nav .category a {
+.lt_aside .lt_nav .child a {
   padding-left: 60px;
 }
 
@@ -93,6 +101,10 @@ a:active {
   padding-top: 50px;
   height: 2000px;
   background-color: pink;
+  transition: all 1s;
+}
+.lt_main.hide_menu {
+  padding-left: 0;
 }
 
 .lt_main .lt_topbar {
@@ -103,6 +115,10 @@ a:active {
   padding-left: 180px;
   background-color: #3C8DBC;
   height: 50px;
+  transition: all 1s;
+}
+.lt_topbar.hide_menu {
+  padding-left: 0;
 }
 
 .lt_main .lt_topbar a {
@@ -113,7 +129,4 @@ a:active {
   font-size: 18px;
   color: #fff;
   text-align: center;
-}
-
-.lt_main .nav {
 }
