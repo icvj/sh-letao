@@ -8,6 +8,112 @@
   font-size: 30px;
 }
 
-.margintop_150 {
+.mt_150 {
   margin-top: 150px;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.lt_aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 180px;
+  background-color: #222D32;
+  z-index: 999;
+}
+
+.lt_aside .lt_brand {
+  background-color: rgb(140, 193, 224);
+}
+.lt_aside .lt_brand a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+.lt_aside .lt_user {
+  height: 180px;
+  padding-top: 30px;
+}
+
+.lt_aside .lt_user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.lt_aside .lt_user p {
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.lt_aside .lt_nav a {
+  display: block;
+  line-height: 40px;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+  color: #fff;
+}
+
+.lt_aside .lt_nav a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
+
+.lt_aside .lt_nav .category a {
+  padding-left: 60px;
+}
+
+
+.lt_main {
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 2000px;
+  background-color: pink;
+}
+
+.lt_main .lt_topbar {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0;
+  padding-left: 180px;
+  background-color: #3C8DBC;
+  height: 50px;
+}
+
+.lt_main .lt_topbar a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.lt_main .nav {
 }
