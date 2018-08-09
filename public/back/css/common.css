@@ -100,7 +100,6 @@ a:active {
   padding-left: 180px;
   padding-top: 50px;
   height: 2000px;
-  background-color: pink;
   transition: all 1s;
 }
 .lt_main.hide_menu {
