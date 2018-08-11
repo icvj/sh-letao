@@ -1,0 +1,42 @@
+.lt_category_left {
+  position: relative;
+  float: left;
+  width: 90px;
+  height: 100%;
+}
+.lt_category_left ul li a {
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #666;
+  background-color: #e3e4e5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lt_category_left ul li a.current {
+  border-right: 1px solid transparent;
+  background-color: #fff;
+}
+.lt_category_right {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.lt_category_right ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.lt_category_right ul li a {
+  display: block;
+}
+.lt_category_right ul li a img {
+  display: block;
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.lt_category_right p.placeholder {
+  padding: 10px;
+}
