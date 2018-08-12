@@ -102,6 +102,42 @@ ul, ol {
   }
 }
 
+.lt_product {
+  padding: 10px;
+  position: relative;
+
+  .lt_product_item {
+    float: left;
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    img {
+      width: 150px;
+      height: 150px;
+      display: block;
+    }
+    .info {
+      text-align: left;
+      height: 40px;
+    }
+    .price {
+      color: red;
+    }
+    .oldPrice {
+      text-decoration: line-through;
+    }
+  }
+
+  .lt_product_item:nth-child(odd) {
+    margin-right: 4%;
+  }
+}
+
+
+
+
 .lt_search {
   position: relative;
   padding: 10px;
@@ -123,4 +159,3 @@ ul, ol {
     border-radius: 0 5px 5px 0;
   }
 }
-

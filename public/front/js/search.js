@@ -19,6 +19,13 @@ $(function () {
     var arr = getHistory();
 
     var searchStr = $(".lt_search input").val();
+    searchStr = searchStr.trim();
+    $(".lt_search input").val("");
+
+    if (searchStr == "") {
+      mui.toast('请输入搜索内容',{ duration:'long', type:'div' });
+      return;
+    }
     
     var index = arr.indexOf(searchStr);
     if (index > -1) {
@@ -35,21 +42,35 @@ $(function () {
     localStorage.setItem("search_list", str);
 
     render();
+
+    location.href = "search_list.html?searchStr=" + searchStr;
   });
 
   $(".lt_history").on("click", ".delete_btn", function () {
-    var arr = getHistory();
-    var index = $(this).parent().data("index");
-    arr.splice(index, 1);
-    var str = JSON.stringify(arr);
-    localStorage.setItem("search_list", str);
+    mui.confirm("删除该条记录", "提示", ["取消", "确定"], function (e) {
+      if (e.index == 1) {
+        var arr = getHistory();
+        var index = $(this).parent().data("index");
+        arr.splice(index, 1);
+        var str = JSON.stringify(arr);
+        localStorage.setItem("search_list", str);
+    
+        render();
 
-    render();
+      }
+
+    }, "div");
+
   });
 
   $(".lt_history").on("click", ".lt_clear_btn", function () {
-    localStorage.setItem("search_list", "");
-    render();
+    mui.confirm("清空所有搜索记录", "提示", ["取消", "确定"], function (e) {
+      if (e.index == 1) {
+        localStorage.setItem("search_list", "");
+        render();
+      }
+    }, "div");
+    
   })
 
 })
