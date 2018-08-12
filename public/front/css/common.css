@@ -90,3 +90,22 @@ ol {
   height: 100%;
   width: 100%;
 }
+.lt_search {
+  position: relative;
+  padding: 10px;
+}
+.lt_search input {
+  border: 1px solid #007AFF;
+  display: block;
+  height: 34px;
+  font-size: 12px;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 5px;
+}
+.lt_search .lt_search_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
